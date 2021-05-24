@@ -81,7 +81,6 @@ if (signupForm) {
         }
         //validate
         if (validateEmail(email) && validatePass(password)) {
-
             auth.createUserWithEmailAndPassword(email, password)
                 .then(() => {
                     auth.currentUser.updateProfile({
@@ -89,6 +88,7 @@ if (signupForm) {
                     }).then(function () {
                         alert("creat user sucessful ");
                     }).catch(function (error) {
+                        alert(error);
                     });
                     window.location.href = "./index.html"
                 }).
@@ -101,7 +101,6 @@ if (signupForm) {
         else {
             alert("Mật khẩu cần có ít nhất 8 ký tự bao gồm cả ký tự đặc biệt");
             console.log(email, password);
-
         }
 
     });
