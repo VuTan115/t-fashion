@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+:root {
+  --primary: #08aeea;
+  --secondary: #13d2b8;
+  --purple: #bd93f9;
+  --pink: #ff6bcb;
+  --blue: #8be9fd;
+  --gray: #333;
+  --font: "Poppins", sans-serif;
+  --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+  --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.action {
+  display: none;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+.action-item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.action-dislike {
+  color: #999;
+  background-color: #eee;
+}
+.action-like {
+  color: #fff;
+  background-color: #ff7870;
+}
+.action .fa {
+  display: flex;
+}

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/lightslider.css">
+    <link rel="stylesheet" href="../css/dots-loading.css">
+    <link rel="stylesheet" href="../css/dialogstyle.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Passion+One&family=Paytone+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../assets/images/logo3-removebg.png" type="image/x-icon">
+
+
+
+    <title>T-Fashion Việt Nam | Be The Man</title>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- center header -->
+        <div class="container cart-container">
+
+            <div class="navbar nav-container">
+                <div id="logo">
+                    <a href="index.html"><img src="../assets/images/logo3-removebgorg.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a class="nav-link" href="index.html"> Home </a>
+                        </li>
+                        <li><a class="nav-link" href="product.html">Product</a></li>
+
+
+                        <li id="circle-avt">
+                            <a href="#">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div id="signup-btn">
+                    <button id="btn-click" type="button">Sign Up</button>
+                </div>
+                <div id="cart">
+                    <img src="../assets/images/cartorg.png" height="40px" width="40px" alt="">
+                </div>
+                <div class="menu">
+                    <img id="menuBtn" src="../assets/images/menu.png" height="50px" width="50px" alt="">
+                </div>
+                <div class="signOut-btn hidden">
+                    <svg enable-background="new 0 0 24 24" fill="#e8eaed" height="40" viewBox="0 0 24 24" width="40"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m0 0h24v24h-24z" fill="none" />
+                        <path
+                            d="m17 8-1.41 1.41 1.58 1.59h-8.17v2h8.17l-1.58 1.58 1.41 1.42 4-4zm-12-3h7v-2h-7c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h7v-2h-7z" />
+                    </svg>
+                    <!-- <i class="fa fa-sign-out" aria-hidden="true"></i> -->
+                </div>
+            </div>
+            <!-- content     -->
+
+
+        </div>
+
+    </div>
+    <!-- catgory  -->
+
+    <!-- products -->
+    <div class="product">
+        <!-- dialog -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="dialog-container">
+                    <div class="row">
+                        <h3>Added To Cart</h3>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="row">
+                        <div class="icon">
+                            <svg id="icon-success" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-4.328-4.328 1.41-1.41L10 14.17l6.333-6.333 1.41 1.42L10 17z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="info">
+
+                            <div class="row">
+                                <div> </div>
+                                <div class="product-detail">
+                                    <h2>Gomez</h2>
+                                    <p>dish pocket minute help bound corn sport wonder came door audience fact require
+                                        bean
+                                        breathe someone stems which chemical curve weight realize let lion
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="btn-gotocart">
+
+                            <button>
+                                <span>Go to cart</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- search bar -->
+        <div class="inner-form">
+            <div class="input-field" id="input-field-bar">
+
+                <input class="form-control" id="choices-text-preset-values" type="text"
+                    placeholder="Type to search..." />
+
+                <button id="btn-search" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path
+                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+            <div class="autocom-box ">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <!-- product -->
+        <div class="smaller-container">
+            <h2 class="title">
+                All products
+            </h2>
+            <!-- <div class="line-loading"></div> -->
+            <div class="dots-loading">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row product">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- page btn -->
+    <div class="row">
+        <div class="page-btn">
+            <span onclick="onDev()">1</span>
+            <span onclick="onDev()">2</span>
+            <span onclick="onDev()">3</span>
+            <span onclick="onDev()">4</span>
+            <span onclick="onDev()">&#8594</span>
+        </div>
+    </div>
+    <!-- get in touchh -->
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="inner">
+
+            <!-- follow us -->
+            <div class="info">
+                <h2> Follow Us</h2>
+                <ul class="icons">
+                    <li><a target="blank" href="https://twitter.com/?lang=vi"><i class="fa fa-twitter"
+                                aria-hidden="true"></i> <span class="label">Twitter</span></a>
+                    </li>
+                    <li><a target="blank" href="https://facebook.com"><i class="fa fa-facebook-official"
+                                aria-hidden="true"></i><span class="label">
+                                Facebook</span></a></li>
+                    <li><a target="blank" href="https://instagram.com"><i class="fa fa-instagram"
+                                aria-hidden="true"></i><span class="label">
+                                Instagram</span></a></li>
+                    <li><a target="blank"
+                            href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser"><i
+                                class="fa fa-envelope-o" aria-hidden="true"></i><span class="label"> email</span></a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- mobie app -->
+            <div class="mobie-app">
+                <div>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <h2>Mobie-App</h2>
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="http://https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer"><img
+                                src="../assets/images/app-store.png" alt="" srcset=""></a></li>
+                    <li><a href="http://https://play.google.com/" target="_blank" rel="noopener noreferrer"><img
+                                src="../assets/images/play-store.png" alt="" srcset=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- source info -->
+        <div id="source-info">
+            <p class="copyright">Copyright © 2021. All rights reserved. <br> <br>Design: <a class="source"
+                    href="https://www.facebook.com/vucaotan1105/" target="blank">Inprocess</a>
+                Images: <a class="source" href="https://unsplash.com/" target="blank">Unsplash</a> Videos: <a
+                    class="source" href="http://coverr.co/" target="blank">Coverr</a></p>
+        </div>
+
+    </footer>
+    <!-- script here -->
+    <!-- firebase script -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+
+    <script language="JavaScript" type="text/javascript" src="../controllers/js/app/app.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../controllers/js/authetication/authicate.js"></script>
+    </script>
+
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script language="JavaScript" type="text/javascript" src="../controllers/js/component/jquery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../css/authicate.css">
+    <link rel="icon" href="/public/assets/images/logo3-removebg.png" type="image/x-icon">
+
+    <title>T-Fashion Việt Nam</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <!-- sign up area -->
+        <div class="form-container sign-up-container">
+            <form action="#" id="signup-form">
+                <h1>Create Account</h1>
+                <div class="social-container">
+
+                    <a href="" id="signup-fb" class="social">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" id="signup-gg" class="social">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+
+                    <a href="#" id="signup-sms" class="social">
+                        <i class="fas fa-sms"></i>
+                    </a>
+
+                </div>
+
+                <span>or use your email for registration</span>
+                <input type="text" id="userName" placeholder="Name" required />
+                <input type="email" id="signup-email" placeholder="Email" required />
+                <input type="password" id="signup-password" placeholder="Password" required />
+                <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <!-- login area -->
+        <div class="form-container log-in-container">
+            <form action="submit" id="login-form">
+                <h1>Login</h1>
+
+                <div class="social-container">
+                    <a href="#" id="login-fb" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" id="login-gg" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" id="login-sms" class="social"><i class="fas fa-sms"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" id="login-email" placeholder="Email" />
+                <input type="password" id="login-password" onkeydown="validateEmail()" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Login</button>
+            </form>
+        </div>
+        <!-- animation panel -->
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="logIn-ani">Log In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button id="signUp-ani" class="ghost">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../controllers/js/app/app.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../controllers/js/authetication/authicate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+/* dialog */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  z-index: 100000;
+  background-color: whitesmoke;
+  margin: 20% auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+
+  max-width: 1080px;
+  border-radius: 10px;
+}
+.dialog-container {
+  object-fit: cover;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* icon-sucess */
+.dialog-container .row {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.product-img {
+  flex-direction: column;
+}
+.product-img img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+#icon-success {
+  fill: #2ecc71;
+
+  height: 40px;
+}
+#btn-gotocart :hover {
+  background-color: #094c59;
+}
+#btn-gotocart button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: max-content;
+  background-color: #0f7c90;
+}
+#btn-gotocart span {
+  color: #fff;
+  color: #fff;
+  top: -13px;
+  position: relative;
+  font-size: 20px;
+}
+#btn-gotocart p {
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+}
+#btn-gotocart {
+  display: flex;
+}
